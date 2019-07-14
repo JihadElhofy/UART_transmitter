@@ -1,8 +1,11 @@
 
 module TX_div (clk,rst,bd_rate,clk_out,SYS_clk_call);
-input clk,rst,SYS_clk_call;
+input clk;            //50MHz
+input rst;
+//active low reset.
+input SYS_clk_call;
 input [1:0 ]bd_rate;
-output clk_out;
+output clk_out;  //Tx input clk 
  
  
     reg T9600;      //9600 baud rate
